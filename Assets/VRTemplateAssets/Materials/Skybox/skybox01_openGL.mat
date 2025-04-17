@@ -29,9 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Exposure: 1
-    - _Rotation: 132.3
+    - _Exposure: 0.35
+    - _Rotation: 170
     m_Colors:
-    - _Tint: {r: 0.735849, g: 0.735849, b: 0.735849, a: 0.5}
+    - _Tint: {r: 0.3729085, g: 0.40723747, b: 0.4716981, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
