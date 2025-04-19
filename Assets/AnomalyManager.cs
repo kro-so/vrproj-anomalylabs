@@ -48,6 +48,11 @@ namespace Unity.VRTemplate
                 m_AnomalyList[1].anomalyObject.SetActive(true);
         }
 
+        public void LateNext()
+        {
+            Invoke("Next", (float)1.1);
+        }
+
         public void CheckInput(string name)
         {
             /* Description:
@@ -67,7 +72,7 @@ namespace Unity.VRTemplate
             }
             else
             {
-                Debug.Log("Correct! Name: " + name + " Index: " + m_CurrentAnomalyIndex);
+                //Debug.Log("Correct! Name: " + name + " Index: " + m_CurrentAnomalyIndex);
                 gamemanager.Count();
             }
 

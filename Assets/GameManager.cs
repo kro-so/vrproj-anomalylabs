@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public int countNumber = 0;
     public int currentFloor;
 
+    public GameObject elevatordoors;
+    private Animator anim;
+
     public GameObject End_UI;
 
     void Start()
@@ -52,6 +55,16 @@ public class GameManager : MonoBehaviour
 
         currentFloor = floorsNumber;
         floorText.SetText(floorsNumber.ToString());
+    }
+
+    public void PlayAnimationFullReset()
+    {
+        /* Description:
+         * Animate elevator doors before calling FullReset()
+         */
+        anim = elevatordoors.GetComponent<Animator>();
+        anim.Play("ElevatorOpen");
+        Invoke("FullReset", (float)1.1);
     }
 
     public void FullReset()
@@ -93,6 +106,10 @@ public class GameManager : MonoBehaviour
         DownButton.interactable = false;
         UpButton.interactable = false;
 
+        Invoke("ActivateEndUI", (float)2.8);   
+    }
+    public void ActivateEndUI()
+    {
         End_UI.SetActive(true);
     }
 }

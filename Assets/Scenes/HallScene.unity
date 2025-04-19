@@ -5619,6 +5619,7 @@ MonoBehaviour:
   resetButton: {fileID: 1216703062}
   countNumber: 0
   currentFloor: 0
+  elevatordoors: {fileID: 8983791190375984359}
   End_UI: {fileID: 1540577104}
 --- !u!1001 &779356011
 PrefabInstance:
@@ -8880,7 +8881,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 764370538}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: FullReset
+        m_MethodName: PlayAnimationFullReset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8916,7 +8917,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1164134416}
         m_TargetAssemblyTypeName: Unity.VRTemplate.AnomalyManager, Assembly-CSharp
-        m_MethodName: Next
+        m_MethodName: LateNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11556,7 +11557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1540577105
 Transform:
   m_ObjectHideFlags: 0
