@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ElevatorScene.unity
     guid: 87cba2ce7b40e47439817f78ea1f0da6
+  - enabled: 0
+    path: Assets/Scenes/HallScene.unity
+    guid: 44a4b223eab5f3044bb99b15cd9b92d9
+  - enabled: 1
+    path: Assets/Scenes/3_BLENDERMODELS.unity
+    guid: 3631eae15e78f36438eae718ada6c97f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
