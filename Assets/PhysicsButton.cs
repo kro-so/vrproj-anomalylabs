@@ -44,15 +44,22 @@ void Update()
     {
         _isPressed = true;
         onPressed.Invoke();
-        Debug.Log("Pressed.");
+        //Debug.Log("Pressed.");
         ButtonGlow();
         Invoke("ButtonNormal", 2);
 
-        // turn off button interactability while elevator doors close and open
-        //enabled = false; //For 3.5 seconds, disable
-        //enable = true; //then turn on again
+        // Make button unable to be pressed
+        ConfigurableJoint PhysButton = GetComponentInChildren<ConfigurableJoint>();
+        SoftJointLimit newLimit = new SoftJointLimit();
+        newLimit.limit = 0f;
+        PhysButton.linearLimit = newLimit;
+
+        // turn off button interactability while elevator doors close and open        
         SwapEnabled();
         Invoke("SwapEnabled", (float) 3.5);
+
+        newLimit.limit = 0.01f;
+        PhysButton.linearLimit = newLimit;
     }
 
     private void SwapEnabled()

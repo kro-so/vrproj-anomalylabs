@@ -44,7 +44,7 @@ namespace Unity.VRTemplate
             //Debug.Log("index " + m_CurrentAnomalyIndex);
 
             m_AnomalyList[m_CurrentAnomalyIndex].anomalyObject.SetActive(true);
-            if (m_CurrentAnomalyIndex <= 4) // activate normalHall for anomalies that can use the same hall model 
+            if (m_CurrentAnomalyIndex <= 5) // activate normalHall for anomalies that can use the same hall model 
                 m_AnomalyList[1].anomalyObject.SetActive(true);
         }
 
