@@ -89,7 +89,9 @@ namespace Unity.VRTemplate
 
             anim = elevatordoors.GetComponent<Animator>();
             anim.Play("ElevatorOpen");
+
         }
     }
-}
+    }
+
 
