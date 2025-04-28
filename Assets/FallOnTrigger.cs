@@ -3,6 +3,10 @@ using System.Collections;
 
 public class FallOnTrigger : MonoBehaviour
 {
+	public GameManager gamemanager;
+	private int oldCount;
+	private int currentCount;
+
 	public float fallDelay = 1f;
 	public float floatDelay = 10f;
 
@@ -10,6 +14,15 @@ public class FallOnTrigger : MonoBehaviour
 	private float timer = 0f;
 	private System.Random rnd = new System.Random();
 	private UnityEngine.Vector3 height;
+
+	private Vector3 originalPos;
+
+    private void Start()
+    {
+		oldCount = currentCount = gamemanager.countNumber;
+		originalPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+		//alternatively, just: originalPos = gameObject.transform.position;
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -29,10 +42,18 @@ public class FallOnTrigger : MonoBehaviour
 				GetComponent<Rigidbody>().isKinematic = false;
 			}
 		}
-		//Reset();
+
+		//Reset
+		currentCount = gamemanager.countNumber;
+		if (currentCount != oldCount)
+        {
+			oldCount = currentCount;
+			Invoke("Reset", (float)1.1);
+		}
+
 	}
 
-    private void Reset()
+    public void Reset()
     {
 		//timer += Time.deltaTime;
 		//if (timer > floatDelay)
@@ -40,7 +61,8 @@ public class FallOnTrigger : MonoBehaviour
 			GetComponent<Rigidbody>().useGravity = false;
 			GetComponent<Rigidbody>().isKinematic = true;
 			//GetComponent<Transform>().position = height;
-			transform.position = height * Time.deltaTime;
+			//transform.position = height * Time.deltaTime;
+			gameObject.transform.position = originalPos;
 			interactedWith = false;
 		//}
 	}

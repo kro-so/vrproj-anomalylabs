@@ -13,9 +13,14 @@ public class GameManager : MonoBehaviour
     public Button DownButton;
     public Button resetButton;
 
+    //public physical buttons
+    public PhysicsButton physbutton_UP;
+    public PhysicsButton physbutton_DOWN;
+
     public int countNumber = 0;
     public int currentFloor;
 
+    //public and private objs for animations
     public GameObject elevatordoors;
     private Animator anim;
 
@@ -83,6 +88,8 @@ public class GameManager : MonoBehaviour
         DownButton.interactable = true;
         UpButton.interactable = true;
 
+        physbutton_UP.SwapEnabled();
+        physbutton_DOWN.SwapEnabled();
     }
 
     public void SwapButtonInteract()
@@ -105,6 +112,9 @@ public class GameManager : MonoBehaviour
 
         DownButton.interactable = false;
         UpButton.interactable = false;
+
+        physbutton_UP.SwapEnabled();
+        physbutton_DOWN.SwapEnabled();
 
         Invoke("ActivateEndUI", (float)2.8);   
     }

@@ -78,6 +78,7 @@ namespace Unity.VRTemplate
 
             PlayAnimationDoors();
             Invoke("Next", (float) 1.1); //delay "scene change" for when the doors are closed
+
             if(gamemanager.currentFloor > 1) //renable buttons if game is not yet won
                 gamemanager.Invoke("SwapButtonInteract", (float)3);
         }

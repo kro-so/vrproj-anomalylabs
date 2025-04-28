@@ -726,6 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &4203610
@@ -1022,6 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &6951501
@@ -2129,6 +2131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &50733290
@@ -2343,8 +2346,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.020000024, y: 0.0050457832, z: 0.02}
-  m_Center: {x: -0.29999995, y: 0.007477122, z: -5.942282e-10}
+  m_Size: {x: 0.020000024, y: 0.005045777, z: 0.009956345}
+  m_Center: {x: -0.29999998, y: 0.007477125, z: 0.0050218254}
 --- !u!65 &77023926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3693,6 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &133721621
@@ -4125,6 +4129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &149530933
@@ -4528,6 +4533,112 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182660324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &186178468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1328391796}
+    m_Modifications:
+    - target: {fileID: 8429981633443581377, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_Name
+      value: TunnelingVignette
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_DefaultParameters.m_ApertureSize
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_DefaultParameters.m_ApertureVerticalPosition
+      value: -0.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_LocomotionProvider
+      value: 
+      objectReference: {fileID: 1328391797}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_EaseInTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_EaseOutTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_ApertureSize
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_VignetteColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_FeatheringEffect
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429981633443581383, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+      propertyPath: m_LocomotionVignetteProviders.Array.data[0].m_OverrideParameters.m_VignetteColorBlend.a
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+--- !u!4 &186178469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
+  m_PrefabInstance: {fileID: 186178468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207704627
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +5230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &224927276
@@ -5415,6 +5527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &226346332
@@ -5495,6 +5608,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Unity.VRTemplate.AnomalyManager, Assembly-CSharp
         m_MethodName: CheckInput
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DOWN
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476590717}
+        m_TargetAssemblyTypeName: PhysicsButton, Assembly-CSharp
+        m_MethodName: TempDisable
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6507,6 +6632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &279981974
@@ -7507,6 +7633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &339900233
@@ -8571,6 +8698,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 186178469}
     - targetCorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1638917678}
@@ -9203,6 +9333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &402918092
@@ -9499,6 +9630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &406997816
@@ -10054,6 +10186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &419312630
@@ -10728,6 +10861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &473233020
@@ -11743,6 +11877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &517245061
@@ -12095,6 +12230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &535664106
@@ -12425,6 +12561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &570628644
@@ -12492,11 +12629,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 328216593633855077, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 328216593633855077, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 487833529046422131, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_IsActive
@@ -12504,11 +12641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 937481921954170541, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 937481921954170541, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1035790433963668018, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
       propertyPath: m_SizeDelta.y
@@ -13057,6 +13194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &579994948
@@ -13564,6 +13702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &618937247
@@ -14989,6 +15128,8 @@ MonoBehaviour:
   UpButton: {fileID: 18924260}
   DownButton: {fileID: 1949455702}
   resetButton: {fileID: 1216703062}
+  physbutton_UP: {fileID: 1476590717}
+  physbutton_DOWN: {fileID: 231183606}
   countNumber: 0
   currentFloor: 0
   elevatordoors: {fileID: 8983791190375984359}
@@ -15720,6 +15861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &817743727
@@ -16383,6 +16525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &859797340
@@ -18434,7 +18577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.089
+      value: 0.583
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18442,7 +18585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.272
+      value: 0.874
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18694,7 +18837,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936983553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
   m_Name: 
@@ -19058,6 +19201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &943382952
@@ -19354,6 +19498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &947944899
@@ -19650,6 +19795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &950712673
@@ -21133,6 +21279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1131368601
@@ -21745,6 +21892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1168461074
@@ -22041,6 +22189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1177382047
@@ -22337,6 +22486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1179385287
@@ -24141,6 +24291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1267409352
@@ -25727,6 +25878,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4324181442426259190, guid: 00054b7f105fdce479315a0b18b079e7, type: 3}
   m_PrefabInstance: {fileID: 1326182470}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1328391796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 392393573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1328391797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 392393573}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1333775780
 GameObject:
   m_ObjectHideFlags: 0
@@ -26259,6 +26426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1342708012
@@ -26617,6 +26785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1350244810
@@ -27416,6 +27585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1385865688
@@ -27853,6 +28023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1392518415
@@ -28493,6 +28664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1469478052
@@ -28573,6 +28745,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Unity.VRTemplate.AnomalyManager, Assembly-CSharp
         m_MethodName: CheckInput
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: UP
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 231183606}
+        m_TargetAssemblyTypeName: PhysicsButton, Assembly-CSharp
+        m_MethodName: TempDisable
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29022,6 +29206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1477143090
@@ -29318,6 +29503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1480682071
@@ -29689,6 +29875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1492677480
@@ -30197,6 +30384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1529489499
@@ -30525,6 +30713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1543673519
@@ -32297,6 +32486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1617759829
@@ -33179,6 +33369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1706056593
@@ -34213,6 +34404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1764458113
@@ -34850,6 +35042,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7119876866639676220, guid: 033f75415eaa0ea4ab5a98b6e8c127f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 77023925}
+    - targetCorrespondingSourceObject: {fileID: 7119876866639676220, guid: 033f75415eaa0ea4ab5a98b6e8c127f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845374103}
+    - targetCorrespondingSourceObject: {fileID: 7119876866639676220, guid: 033f75415eaa0ea4ab5a98b6e8c127f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845374102}
     - targetCorrespondingSourceObject: {fileID: 426275973996910094, guid: 033f75415eaa0ea4ab5a98b6e8c127f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1446888514}
@@ -36407,6 +36605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1837056221
@@ -36430,6 +36629,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1845374102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780544201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0008396147, y: 0.00094092224, z: 0.003847359}
+  m_Center: {x: -0.31545293, y: 0.006579255, z: -0.0017746736}
+--- !u!65 &1845374103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780544201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020000024, y: 0.0049856994, z: 0.006309302}
+  m_Center: {x: -0.29999995, y: 0.0075071785, z: -0.0068453494}
 --- !u!1 &1846265279
 GameObject:
   m_ObjectHideFlags: 0
@@ -36703,6 +36944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1846265287
@@ -37102,6 +37344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &1903582136
@@ -40931,6 +41174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &2118512788
@@ -41486,6 +41730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961cd15aa59ee294b8540f5a760a9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamemanager: {fileID: 764370538}
   fallDelay: 1
   floatDelay: 10
 --- !u!65 &2137582561
@@ -41534,7 +41779,7 @@ Transform:
   m_GameObject: {fileID: 2144433378}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01, y: 1.264, z: 1.571}
+  m_LocalPosition: {x: -2.01, y: 1.13, z: 1.571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

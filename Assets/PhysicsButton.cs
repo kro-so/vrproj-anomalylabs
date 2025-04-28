@@ -62,9 +62,15 @@ void Update()
         PhysButton.linearLimit = newLimit;
     }
 
-    private void SwapEnabled()
+    public void SwapEnabled()
     {
         enabled = !enabled;
+    }
+
+    public void TempDisable()
+    {
+        SwapEnabled();
+        Invoke("SwapEnabled", (float)3.5);
     }
 
     private void Released()
